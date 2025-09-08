@@ -174,7 +174,7 @@ create table course_assignments(
     updated_at timestamp,
     updated_by number,
     constraint fk_period foreign key(period_id) references periods(id),
-    constraint fk_faculty foreign key(faculty_id) references periods(id),
+    constraint fk_faculty foreign key(faculty_id) references faculties(id),
     constraint fk_cycle foreign key(cycle_id) references cycles(id),
     constraint fk_course foreign key(course_id) references courses(id),
     constraint fk_course_type foreign key(course_type) references record_types(id),
